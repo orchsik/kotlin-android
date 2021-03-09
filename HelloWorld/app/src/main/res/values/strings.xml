@@ -4,4 +4,7 @@
     <string name="button">/Button</string>
     <string name="button2">Button</string>
     <string name="click_me">click me</string>
+    <string name="togglebutton">ToggleButton</string>
+    <string name="offfffff">OFFFFFFF</string>
+    <string name="onnnnn">ONNNNN</string>
 </resources>
