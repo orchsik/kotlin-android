@@ -26,7 +26,7 @@ class HelloEditText: AppCompatActivity() {
 
         edittext1.addTextChangedListener(listenr1)
 
-        edittext1.setOnEditorActionListener { textView, i, keyEvent ->
+        edittext1.setOnEditorActionListener { _, _, _ ->
             textView1.text = "You press Enter Button"
             textView3.text = "You input: ${edittext1.text}"
             false   // 키보드 내려감
