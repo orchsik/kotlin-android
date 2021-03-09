@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#CC2323"
+    android:orientation="vertical">
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:showText="true"
+        android:text="Switch1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:thumb="@android:mipmap/sym_def_app_icon"
+        android:track="@android:drawable/bottom_bar" />
+
+    <Switch
+        android:id="@+id/switch3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:showText="true"
+        android:text="Switch2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <Button
+        android:id="@+id/button46"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="get status" />
+
+    <Button
+        android:id="@+id/button47"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="set on" />
+
+    <Button
+        android:id="@+id/button48"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="set off" />
+</LinearLayout>
