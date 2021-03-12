@@ -29,7 +29,7 @@ class ListView : AppCompatActivity() {
     list1.setOnItemClickListener(listener1)
   }
 
-  val listener1 = object : AdapterView.OnItemClickListener {
+  private val listener1 = object : AdapterView.OnItemClickListener {
     // p0:전체 리스트 뷰 리스트
     // p1:사용자가 터치한 뷰
     // p2:터치한 뷰 인덱스

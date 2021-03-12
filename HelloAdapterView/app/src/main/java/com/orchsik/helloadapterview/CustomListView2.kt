@@ -46,7 +46,7 @@ class CustomListView2 : AppCompatActivity() {
      *        TextViews. The first N views in this list are given the values of the first N columns
      *        in the from parameter.
      */
-    val adapter1 = SimpleAdapter(this, dataList, R.layout.row2, keys, ids)
+    val adapter1 = SimpleAdapter(this, dataList, R.layout.customlistview2_row, keys, ids)
     list1.adapter = adapter1
 
     list1.setOnItemClickListener { parent, view, position, id ->
