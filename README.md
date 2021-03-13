@@ -30,7 +30,7 @@ private lateinit var binding: {bindingClassName}
 
 override fun onCreate(savedInstanceState: Bundle) {
    super.onCreate(savedInstanceState)
-   binding = ResultProfileBinding.inflate(layoutInflater)
+   binding = {bindingClassName}.inflate(layoutInflater)
    val view = binding.root
    setContentView(view)
 
@@ -42,7 +42,7 @@ override fun onCreate(savedInstanceState: Bundle) {
 - Fragment에서 뷰 결합 사용
 
 ```Kotlin
- private var _binding: ResultProfileBinding? = null
+ private var _binding: {bindingClassName}? = null
  // This property is only valid between onCreateView and
  // onDestroyView.
  private val binding get() = _binding!!
@@ -52,7 +52,7 @@ override fun onCreate(savedInstanceState: Bundle) {
      container: ViewGroup?,
      savedInstanceState: Bundle?
  ): View? {
-     _binding = ResultProfileBinding.inflate(inflater, container, false)
+     _binding = {bindingClassName}.inflate(inflater, container, false)
      val view = binding.root
      return view
  }
