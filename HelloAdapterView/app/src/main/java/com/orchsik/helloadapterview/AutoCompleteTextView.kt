@@ -29,7 +29,7 @@ class AutoCompleteTextView : AppCompatActivity() {
 //    autoCompleteTextView.setOnItemClickListener(listener1)
 
     autoCompleteTextView.setOnItemClickListener { parent, view, position, id ->
-      textView2.text = "${data1[position]} 항목을 클릭했습니다"
+      rowTextView.text = "${data1[position]} 항목을 클릭했습니다"
     }
   }
 
@@ -41,7 +41,7 @@ class AutoCompleteTextView : AppCompatActivity() {
 //          textView2.text = "${data1[position]} 항목을 클릭했습니다."
 //        }
 //      }
-      textView2.text = "${data1[position]} 항목을 클릭했습니다."
+      rowTextView.text = "${data1[position]} 항목을 클릭했습니다."
     }
   }
 }

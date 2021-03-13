@@ -33,7 +33,7 @@ class MultiAutoCompleteTextView : AppCompatActivity() {
     }
 
     multiAutoCompleteTextView.setOnItemClickListener { parent, view, position, id ->
-      textView2.text = "${data1[position]} is Clicked."
+      rowTextView.text = "${data1[position]} is Clicked."
     }
   }
 }
