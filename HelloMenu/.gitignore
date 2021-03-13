@@ -13,6 +13,3 @@
 .externalNativeBuild
 .cxx
 local.properties
-/theory/**
-/theory-images/**
-/theory-data/**

@@ -12,3 +12,9 @@
      id 'kotlin-android-extensions'
    }
    ```
+
+## 진행순서
+
+1. HelloView
+2. HelloAdapterView
+3. HelloMenu
