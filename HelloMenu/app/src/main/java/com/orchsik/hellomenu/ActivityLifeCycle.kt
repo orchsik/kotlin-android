@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import com.orchsik.hellomenu.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
+class ActivityLifeCycle : AppCompatActivity() {
   private lateinit var binding : ActivityMainBinding
 
   // Activity가 생성될 때 자동으로 호출된다.
