@@ -3,13 +3,13 @@ package com.orchsik.helloactivity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.orchsik.helloactivity.databinding.StartActivityBinding
+import com.orchsik.helloactivity.databinding.ActivityFirstBinding
 
 class StartActivity : AppCompatActivity() {
-    private lateinit var binding: StartActivityBinding
+    private lateinit var binding: ActivityFirstBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = StartActivityBinding.inflate(layoutInflater)
+        binding = ActivityFirstBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
 
@@ -20,7 +20,7 @@ class StartActivity : AppCompatActivity() {
              * SecondActivity::class.java
              * SecondActivity를 가지고 만들어진 Java파일이 컴파일 된 클래스 파일을 지칭함.
              */
-            val second_intent = Intent(this, SecondActivity::class.java)
+            val second_intent = Intent(this, StartActivity2::class.java)
             startActivity(second_intent)
         }
 

@@ -7,7 +7,7 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="MainActivity"
+        android:text="FirstActivity"
         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
     <Button
@@ -15,4 +15,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="execute second activity" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="execute third activity" />
 </LinearLayout>
