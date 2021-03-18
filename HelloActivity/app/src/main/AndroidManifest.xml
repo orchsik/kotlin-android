@@ -9,8 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HelloActivity">
-        <activity android:name=".OnActivityResult3"></activity>
+        <activity android:name=".ActivityData2"></activity>
+        <activity android:name=".OnActivityResult3" />
         <activity android:name=".OnActivityResult2" />
+        <activity android:name=".OnActivityResult" />
         <activity android:name=".StartActivity2" />
         <activity android:name=".MainActivity">
             <intent-filter>

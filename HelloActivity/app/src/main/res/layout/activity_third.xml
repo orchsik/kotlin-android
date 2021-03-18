@@ -18,23 +18,23 @@
         android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="exist activity ok" />
+        android:text="finish activity ok" />
 
     <Button
         android:id="@+id/button5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="exist activity cancel" />
+        android:text="finish activity cancel" />
 
     <Button
         android:id="@+id/button6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="exist activity user1" />
+        android:text="finish activity user1" />
 
     <Button
         android:id="@+id/button7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="exist activity user2" />
+        android:text="finish activity user2" />
 </LinearLayout>

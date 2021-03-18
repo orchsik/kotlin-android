@@ -1,5 +1,6 @@
 package com.orchsik.helloactivity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.orchsik.helloactivity.databinding.ActivityMainBinding
