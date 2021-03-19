@@ -6,14 +6,14 @@ import android.os.Bundle
 import android.view.Gravity
 import android.widget.Toast
 import com.orchsik.androidmessage.databinding.CustomToastBinding
-import com.orchsik.androidmessage.databinding.Toast1Binding
+import com.orchsik.androidmessage.databinding.ToastBinding
 
 class Toast : AppCompatActivity() {
-    private lateinit var binding: Toast1Binding
+    private lateinit var binding: ToastBinding
     private lateinit var customToastBinding: CustomToastBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = Toast1Binding.inflate(layoutInflater)
+        binding = ToastBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
 
