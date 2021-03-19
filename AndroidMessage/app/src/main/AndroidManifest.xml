@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidMessage">
+        <activity android:name=".ChoiceListDialog" />
         <activity android:name=".ListDialog" />
         <activity android:name=".Dialog" />
         <activity android:name=".SnackBar" />
