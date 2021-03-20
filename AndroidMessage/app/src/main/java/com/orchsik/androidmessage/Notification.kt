@@ -150,9 +150,6 @@ class Notification : AppCompatActivity() {
     private fun getNotificationBuilder(id:String, name:String) : NotificationCompat.Builder {
         // OS 버전별로 분기
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            // 알림 메시지 관리 객체 추출
-            val manager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
-
             // 채널 객체 생성
             val channel = NotificationChannel(id, name, NotificationManager.IMPORTANCE_HIGH)
             // 단말기 LED 여부
@@ -161,6 +158,8 @@ class Notification : AppCompatActivity() {
             // 진동 사용 여부
             channel.enableVibration(true)
 
+            // 알림 메시지 관리 객체 추출
+            val manager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
             // 알림 메시지 관리 객체에 채널 등록
             manager.createNotificationChannel(channel)
 
