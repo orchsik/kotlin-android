@@ -32,13 +32,14 @@ class Handler : AppCompatActivity() {
 
         /**
          * handler 사용.
-         * MainThread에서 처리하기 때문에 5초 미만의 작업만.
+         * MainThread에서 처리하기 때문에 사용자가 인지하지 못 할 정도의 짧은 작업만.
          */
         val handler = Handler(Looper.myLooper()!!)
         // 한번의 작업단위 구현
         val thread1 = object : Thread() {
             override fun run() {
                 super.run()
+                SystemClock.sleep(5000)
                 val now2 = System.currentTimeMillis()
                 binding.textView2.text = "handler: $now2"
 
