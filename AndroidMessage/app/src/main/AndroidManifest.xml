@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidMessage">
-        <activity android:name=".StyleNotification"></activity>
+        <activity android:name=".MessageNotification"></activity>
+        <activity android:name=".StyleNotification" />
         <activity android:name=".NotificationActivity4" />
         <activity android:name=".NotificationActivity3" />
         <activity android:name=".NotificationActivity2" />
