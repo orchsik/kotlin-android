@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ThreadAndService">
-        <activity android:name=".Thread"></activity>
+        <activity android:name=".Handler"></activity>
+        <activity android:name=".Thread" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
