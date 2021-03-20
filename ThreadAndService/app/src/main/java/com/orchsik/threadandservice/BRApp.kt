@@ -18,7 +18,7 @@ import com.orchsik.threadandservice.databinding.BrApp1Binding
  * BroadCastReceiver는 평소에는 동작하지 않다가 동작 요청이 발생하면 동작한다.
  * 동작 요청은 이름을 통해 요청할 수 있으며, intent filter를 통해 이름을 등록한다.
  */
-class MainActivity : AppCompatActivity() {
+class BRApp : AppCompatActivity() {
 
     private val br = TestReceiver()
 
