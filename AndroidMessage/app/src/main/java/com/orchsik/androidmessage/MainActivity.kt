@@ -1,7 +1,7 @@
 package com.orchsik.androidmessage
 
-import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
 import com.orchsik.androidmessage.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
