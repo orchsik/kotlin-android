@@ -9,17 +9,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ThreadAndService">
+
+        <receiver
+            android:name=".MyReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
         <receiver
             android:name=".TestReceiver"
             android:enabled="true"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="kr.co.orchsik.testbr" />
             </intent-filter>
-
         </receiver>
 
+        <activity android:name=".SystemMessage" />
         <activity android:name=".BRApp" />
         <activity android:name=".RunOnUiThread" />
         <activity android:name=".HandlerMessage" />
@@ -34,4 +46,7 @@
         </activity>
     </application>
 
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
 </manifest>
