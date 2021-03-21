@@ -14,11 +14,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ThreadAndService">
+        <service
+            android:name=".IPCService"
+            android:enabled="true"
+            android:exported="true"></service>
+
 
         <service
             android:name=".TestService"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true" />
 
         <receiver
             android:name=".MyReceiver"
@@ -31,7 +36,6 @@
                 <action android:name="android.provider.Telephony.SMS_RECEIVED" />
             </intent-filter>
         </receiver>
-
         <receiver
             android:name=".TestReceiver"
             android:enabled="true"
@@ -41,6 +45,7 @@
             </intent-filter>
         </receiver>
 
+        <activity android:name=".IPC" />
         <activity android:name=".Service" />
         <activity android:name=".SystemMessage" />
         <activity android:name=".BRApp" />
